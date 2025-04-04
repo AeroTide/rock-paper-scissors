@@ -7,7 +7,6 @@
 </head>
 <body>
     <script>
-
     function getComputerChoice() {
         const computerSelection = Math.floor(Math.random() * 3);
             if (computerSelection === 0) {
@@ -18,7 +17,6 @@
             return "scissors";
     }
    
-
     function getHumanChoice() {
         const humanSelection = prompt().toLowerCase();
         switch(humanSelection) {
@@ -55,7 +53,6 @@
 
         playGame(game + 1);
     }
-    
 
     function playRound(humanSelection, computerSelection) { 
         if (humanSelection === computerSelection) {
@@ -74,13 +71,12 @@
     }
     
     playGame(1);
-    
+
     if (humanScore > computerScore) {
             console.log("you win");
         } else {
             console.log("you lose");
         }
-
     </script>
 </body>
 </html>
