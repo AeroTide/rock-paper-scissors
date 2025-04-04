@@ -48,13 +48,14 @@
         console.log(humanSelection);
 
         const a = playRound(humanSelection, computerSelection);
-        
+
         console.log(a);
         console.log(computerScore);
         console.log(humanScore);
 
         playGame(game + 1);
     }
+    
 
     function playRound(humanSelection, computerSelection) { 
         if (humanSelection === computerSelection) {
@@ -73,6 +74,12 @@
     }
     
     playGame(1);
+    
+    if (humanScore > computerScore) {
+            console.log("you win");
+        } else {
+            console.log("you lose");
+        }
 
     </script>
 </body>
