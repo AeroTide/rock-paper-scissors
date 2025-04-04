@@ -42,11 +42,8 @@
     console.log(computerSelection);
     console.log(humanSelection);
 
-    
-    
-        
-    const a = playRound(humanSelection, computerSelection); 
     function playGame(a) {
+        const a = playRound(humanSelection, computerSelection); 
     function playRound(humanSelection, computerSelection) { 
         if (humanSelection === computerSelection) {
             return "draw";
@@ -62,12 +59,13 @@
             return "lose";
         }
     }
+    
     times && --times && repeat(a,5);
 }
 
     
     console.log(a);
-
+    
     console.log(computerScore);
     console.log(humanScore);
    
