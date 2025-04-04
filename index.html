@@ -37,13 +37,18 @@
     let humanScore = 0;
     let computerScore = 0;  
 
+    function playGame(game = 1) {
+        if (game > 5) {
+            return;
+        }
+        
+    }
+
     const humanSelection = getHumanChoice();
     const computerSelection = getComputerChoice();
     console.log(computerSelection);
     console.log(humanSelection);
 
-    function playGame(a) {
-        const a = playRound(humanSelection, computerSelection); 
     function playRound(humanSelection, computerSelection) { 
         if (humanSelection === computerSelection) {
             return "draw";
@@ -60,15 +65,10 @@
         }
     }
     
-    times && --times && repeat(a,5);
-}
-
-    
+    const a = playRound(humanSelection, computerSelection);
     console.log(a);
-    
     console.log(computerScore);
     console.log(humanScore);
-   
 
     </script>
 </body>
