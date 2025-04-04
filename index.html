@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    function getComputerChoice() {
+        const computerSelection = Math.floor(Math.random() * 3);
+            if (computerSelection === 0) {
+            return "rock";
+            } else if (computerSelection === 1) {
+            return "paper"
+            } else 
+            return "scissors";
+    }
+   
+
+    function getHumanChoice() {
+        const humanSelection = prompt().toLowerCase();
+        switch(humanSelection) {
+            case "rock":
+                return "rock";
+            break;
+            case "paper":
+                return "paper"
+            break;
+            case "scissors":
+                return "scissors";
+            break;
+        }
+    }  
+
+    let humanScore = 0;
+    let computerScore = 0;  
+
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
+    console.log(computerSelection);
+    console.log(humanSelection);
+
+    function playGame {
+
+    function playRound(humanSelection, computerSelection) { 
+        if (humanSelection === computerSelection) {
+            return "draw";
+        } else if (
+            (humanSelection === "rock" && computerSelection === "scissors") ||
+            (humanSelection === "paper" && computerSelection === "rock") || 
+            (humanSelection === "scissors" && computerSelection === "paper")
+        ) {
+            humanScore ++ 
+            return "win";
+        } else {
+            computerScore++;
+            return "lose";
+        }
+    }
+
+    const a = playRound(humanSelection, computerSelection); 
+    console.log(a);
+
+    console.log(computerScore);
+    console.log(humanScore);
+}
+    </script>
+</body>
+</html>
