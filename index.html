@@ -43,14 +43,15 @@
         }
         const humanSelection = getHumanChoice();
         const computerSelection = getComputerChoice();
+        console.log(computerSelection);
+        console.log(humanSelection);
         const a = playRound(humanSelection, computerSelection);
+        console.log(a);
+        console.log(computerScore);
+        console.log(humanScore);
 
-        playGame(game +1);
+        playGame(game + 1);
     }
-
-   
-    console.log(computerSelection);
-    console.log(humanSelection);
 
     function playRound(humanSelection, computerSelection) { 
         if (humanSelection === computerSelection) {
@@ -68,10 +69,7 @@
         }
     }
     
-    
-    console.log(a);
-    console.log(computerScore);
-    console.log(humanScore);
+    playGame(1);
 
     </script>
 </body>
