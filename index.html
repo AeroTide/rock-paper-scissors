@@ -41,11 +41,14 @@
         if (game > 5) {
             return;
         }
-        
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+        const a = playRound(humanSelection, computerSelection);
+
+        playGame(game +1);
     }
 
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
+   
     console.log(computerSelection);
     console.log(humanSelection);
 
@@ -65,7 +68,7 @@
         }
     }
     
-    const a = playRound(humanSelection, computerSelection);
+    
     console.log(a);
     console.log(computerScore);
     console.log(humanScore);
